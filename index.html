@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Responsive Site</title>
+</head>
+<body>
+
+<!-------------------------- NAVBAR STARTS HERE ------------------------------------------------------------->
+    <nav class="p-3 flex bg-white justify-between items-center" >
+
+        <a href="#" id="brand" class="flex gap-4 items-center">
+            <img src="logo.png" alt="" class="object-cover max-h-12 max-w-12">
+            <span class="font-bold text-2xl text-lime-600" >ToDesktop</span>
+        </a>
+
+        <div id="nav-menu" class="hidden lg:flex gap-12">
+            <a href="#" class="font-medium hover:text-lime-600">Pricing</a>
+            <a href="#" class="font-medium hover:text-lime-600">Docs</a>
+            <a href="#" class="font-medium hover:text-lime-600">ChangeLog</a>
+            <a href="#" class="font-medium hover:text-lime-600">Blogs</a>
+            <a href="#" class="font-medium hover:text-lime-600">Login</a>
+        </div>
+
+        <button class="hidden lg:block font-medium  px-4 py-2 rounded-xl bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br">
+            Electron Developers
+        </button>
+
+
+        <button class=" lg:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-bars text-lime-600"></i>
+        </button>
+        
+        <!-- For mobile on hamburger click-->
+        <div class=" hidden lg:hidden fixed z-10 bg-white inset-0 p-3" id="new-dialog">
+            <div id="nav-bar" class="flex justify-between ">
+
+                <a href="#" id="brand" class="flex gap-4 items-center">
+                    <img src="logo.png" alt="" class="object-cover max-h-12 max-w-12">
+                    <span class="font-bold text-2xl text-lime-600" >ToDesktop</span>
+                </a>
+
+                <button class="lg:hidden" onclick="handleMenu()">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+
+            </div>
+
+            <div class="m-7">
+                <a href="#" class="font-medium p-3 m-3 hover:bg-gray-100 block rounded-xl">Pricing</a>
+                <a href="#" class="font-medium p-3 m-3 hover:bg-gray-100 block rounded-xl">Docs</a>
+                <a href="#" class="font-medium p-3 m-3 hover:bg-gray-100 block rounded-xl">ChangeLog</a>
+                <a href="#" class="font-medium p-3 m-3 hover:bg-gray-100 block rounded-xl">Blogs</a>
+                <a href="#" class="font-medium p-3 m-3 hover:bg-gray-100 block rounded-xl">Login</a>
+                <hr class="border-t-2 border-gray-300">
+            
+                <button class="font-medium  px-4 py-2 m-3 rounded-xl bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br">
+                    Electron Developers
+                </button>
+            </div>
+           
+
+        </div>
+
+    </nav>
+<!------------------------------- NAVBAR ENDS HERE ------------------------------------------------>
+
+
+
+
+
+
+
+<!-------------------------------  SECTION HERE ------------------------------------------------>
+
+    <div class="flex justify-center items-center mt-4">
+        <div class="h-1 bg-black w-1/6"></div>
+    </div>
+
+
+
+    <div class="h-auto w-100 flex flex-wrap  flex-col items-center text-center p-6">
+
+        <div class="h-auto w-100 flex flex-wrap  flex-col items-center text-center ">
+            <p class="text-indigo-600 font-bold text-2xl md:text-3xl lg:text-4xl text-center" >" Pure hardword , No shortcuts !!"</p>
+        </div>
+
+        <div class="w-full flex flex-wrap justify-evenly">
+
+            <div class="w-44 flex flex-col items-center mb-10">
+                <img class="w-44 h-48" src="logo.png">
+                <p class="3xl font-bold">600+</p>
+                <p class="3xl font-bold">Different courses</p>
+            </div>
+
+            <div class="w-44 flex flex-col items-center mb-10">
+                <img class="w-44 h-48" src="logo.png">
+                <p class="3xl font-bold">600+</p>
+                <p class="3xl font-bold">Different courses</p>
+            </div>
+
+            <div class="w-44 flex flex-col items-center mb-10">
+                <img class="w-44 h-48" src="logo.png">
+                <p class="3xl font-bold">600+</p>
+                <p class="3xl font-bold">Different courses</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+<!-------------------------------  SECTION END ------------------------------------------------>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+    
+<script src="script.js"></script>
+
+</html>
